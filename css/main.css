@@ -45,6 +45,10 @@ header .logo img {
 }
 
 /* container */
+	/* content-left */
+#content-left {
+	display: none;
+}	
 nav a {
 	float: left;
 	width: 50%;
@@ -80,10 +84,16 @@ nav a:first-child {
 	position: relative;
 	border-bottom: 3px solid #8dbe24;
 }
+#free-member h2 {
+	border-bottom-color: #ffd200;
+}
+#free-member h2 .triangle {
+	border-top-color: #ffd200;
+}
 .mod-video h2 .triangle {
 	position: absolute;
 	left: 30px;
-	bottom: -13px;
+	bottom: -12px;
 }
 .mod-video h2 a {
 	color: #000;
@@ -133,8 +143,52 @@ nav a:first-child {
 	color: #898989;
 	font-size: 14px;
 }
+	/* content-left */
+
+	/* content-right */
+.member-hd {
+	padding: 15px;
+}	
+.member-hd h3 {
+	margin: 0;
+	padding: 0;
+}
+.member-hd h3 em{
+	margin: 0;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: normal;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}	
+#visitor .member-hd h3 em {
+	color: #94c629;
+}
+#free-member .member-hd h3 em {
+	color: #fdd30d;
+}
+.member-hd h3 span {
+	line-height: 30px;
+	color: #767676;
+	font-size: 16px;
+	font-weight: normal;	
+}
+.member-hd .pill {
+	margin-top: 11px;
+}
+#free-member .pill {
+	text-shadow: 1px 1px 1px rgba(195, 161, 0, 1);	
+	background: #ffd200;
+	border-color: #d19400;	
+}
+#content-right .video-con {
+	padding-top: 10px;
+	background: #f7f7f7;
+}
+
+	/* end content-right */
 
 /* end container */
+
 
 footer {
 	height: 70px;
@@ -150,36 +204,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* helper class */
 .cf:before, .cf:after {
 	display: table;
@@ -190,6 +214,12 @@ footer {
 }
 .cf {
 	*zoom: 1;
+}
+.clear-both {
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;	
 }
 
 .triangle {
@@ -202,8 +232,25 @@ footer {
 	border-color: #94c629 transparent transparent transparent;
 }
 
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
 
-
+.pill {
+	display: block;
+	padding: 6px 14px;
+	color: #fff;
+	font-size: 22px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(97, 141, 1, .9);
+	background: #94c629;
+	border: 2px solid #618d01;	
+	-webkit-border-radius: 24px;
+	        border-radius: 24px;
+}
 
 
 
