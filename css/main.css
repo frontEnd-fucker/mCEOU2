@@ -1,5 +1,31 @@
 @charset "utf-8";
 /* CSS Document */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1, h2, h3, h4, h5, p{
+	padding: 0;
+	margin: 0;
+}
+
+
+/* ==========================================================================
+   end Base styles: opinionated defaults
+   ========================================================================== */   
 body {
 	width: 100%;
 	height: 100%;
@@ -8,10 +34,6 @@ body {
 	font-size: 14px;
 	background: #fff;
 	overflow: hidden;
-}
-.wrap {
-	width: 96%;
-	margin: 0 auto;
 }
 header {
 	width: 100%;
@@ -47,7 +69,7 @@ header .logo img {
 /* container */
 	/* content-left */
 #content-left {
-	display: none;
+	yu-display: none;
 }	
 nav a {
 	float: left;
@@ -191,6 +213,7 @@ nav a:first-child {
 
 
 footer {
+	clear: both;
 	height: 70px;
 	line-height: 14px;
 	color: #494949;
@@ -200,6 +223,66 @@ footer {
 	background: #e2e0e0;
 	border-top: 1px solid #cbcaca;
 }
+footer p {
+	margin: 10px 0;
+}
+
+
+/*====================================================
+		 二级页面videoList.jsp
+=======================================================*/
+.list-page-title {
+	height: 46px;
+	line-height: 46px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	background: #94c629;
+}
+.vVideo-item {
+	padding: 15px 0;
+	border-bottom: 1px solid #e1e1e1;
+}
+.vVideo-thumb {
+	float: left;
+	width: 143px;
+	height: 94px;
+	margin-right: 20px;
+}
+.vVideo-thumb img {
+	width: 143px;
+	height: 94px;
+}
+.vVideo-data {
+	height: 94px;
+	position: relative;
+	overflow: hidden;
+}
+.vVideo-name {
+	color: #222222;
+	font-size: 16px;
+}
+.vVideo-author  {
+	margin-top: 10px;
+	color: #3f3f3f;
+	font-size: 14px;
+}
+.vVideo-intro {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #616161;
+	font-size: 14px;
+}
+
+/*====================================================
+		 end 二级页面videoList.jsp
+=======================================================*/
+
+
+
+
+
 
 
 
@@ -231,7 +314,10 @@ footer {
 	border-style: solid dashed dashed dashed;
 	border-color: #94c629 transparent transparent transparent;
 }
-
+.wrap {
+	width: 96%;
+	margin: 0 auto;
+}
 .fl {
 	float: left;
 }
