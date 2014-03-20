@@ -12,6 +12,22 @@
 
 <body>
 
+<!-- menu -->
+<div id="menu">
+	<div class="search-wrap">
+		<form>
+			<input type="text" name="search" class="search-input" placeholder="关键字搜索">
+		</form>
+	</div>
+	<ul>
+		<li class="menu-title">会员分类</li>
+		<li><a href="#">游客体验专区<span>体验百个免费视频</span></a></li>
+		<li><a href="#">免费注册会员专区<span>体验百个免费视频</span></a></li>
+		<li><a href="#">付费会员专区<span>体验百个免费视频</span></a></li>
+	</ul>
+</div>
+<!-- end menu -->
+
 <!-- header -->
 <header>
 	<div class="wrap">
@@ -24,8 +40,8 @@
 
 <!-- nav -->
 <nav class="cf">
-	<a href="#">全部</a>
-	<a href="#">会员</a>
+	<a class="nav-left curr" href="#">全部</a>
+	<a class="nav-right" href="#">会员</a>
 </nav>
 <!-- end nav -->
 
@@ -379,6 +395,7 @@
 </footer>
 
 <script src="js/vendor/zepto.min.js"></script>
+<script src="js/vendor/touch.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/main.js"></script>
 </body>
