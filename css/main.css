@@ -21,7 +21,10 @@ h1, h2, h3, h4, h5, p{
 	padding: 0;
 	margin: 0;
 }
-
+a {
+	color: #898989;
+	text-decoration: none;
+}
 
 /* ==========================================================================
    end Base styles: opinionated defaults
@@ -30,7 +33,7 @@ body {
 	width: 100%;
 	height: 100%;
 	color: #898989;
-	font-family: "arial","微软雅黑";
+	font-family: "arial","华文细黑", "微软雅黑";
 	font-size: 14px;
 	background: #fff;
 	overflow: hidden;
@@ -96,33 +99,13 @@ nav a:first-child {
 }
 
 
-.mod-video h2{
-	height: 24px;	
-	margin: 0;
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-bottom: 14px;
-	line-height: 24px;
-	position: relative;
-	border-bottom: 3px solid #8dbe24;
-}
 #free-member h2 {
 	border-bottom-color: #ffd200;
 }
 #free-member h2 .triangle {
 	border-top-color: #ffd200;
 }
-.mod-video h2 .triangle {
-	position: absolute;
-	left: 30px;
-	bottom: -12px;
-}
-.mod-video h2 a {
-	color: #000;
-	font-size: 18px;
-	font-weight: normal;
-	text-decoration: none;
-}
+
 .mod-video h2 a.more {
 	float: right;
 	font-size: 14px;
@@ -229,7 +212,7 @@ footer p {
 
 
 /*====================================================
-		 二级页面videoList.jsp
+  二级页面videoList.jsp
 =======================================================*/
 .list-page-title {
 	height: 46px;
@@ -243,6 +226,9 @@ footer p {
 	padding: 15px 0;
 	border-bottom: 1px solid #e1e1e1;
 }
+.vVideo-item:last-child {
+	border-bottom: 0 none;
+}
 .vVideo-thumb {
 	float: left;
 	width: 143px;
@@ -252,6 +238,7 @@ footer p {
 .vVideo-thumb img {
 	width: 143px;
 	height: 94px;
+	border: 2px solid #e0e0e0;	
 }
 .vVideo-data {
 	height: 94px;
@@ -275,14 +262,58 @@ footer p {
 	font-size: 14px;
 }
 
-/*====================================================
-		 end 二级页面videoList.jsp
-=======================================================*/
+/* ====================================================
+   end 二级页面videoList.jsp
+======================================================= */
 
 
+/*================================================
+   视频播放页面
+====================================================*/
+video {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+.player-top {
+	width: 100%;
+	height: 40px;
+	text-indent: 20px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #4c4c4c;
+}
+.player-bottom {
+	height: 48px;	
+	line-height: 48px;
+	padding: 0 20px;
+	background: #f7f7f7;
+}
+.course-intro {
+	padding: 20px 20px;
+}
+.course-intro h2 {
+	margin-bottom: 5px;
+	margin-left: -8px;
+}
+.course-intro p {
+	font-size: 12px;
+	line-height: 20px;
+}
+.recommend .green-line-title {
+	width: 96%;
+	margin: 0 auto;
+}
+.fav-btn {
+	padding-left: 25px;
+	background: url(../img/fav-icon.png) no-repeat left 13px;
+}
 
-
-
+/* ================================================
+   end 视频播放页面
+====================================================*/
 
 
 
@@ -338,8 +369,36 @@ footer p {
 	        border-radius: 24px;
 }
 
-
-
+.green-title {
+	color: #94c629;
+	font-size: 20px;
+	font-family: "arial", "华文细黑", "微软雅黑";
+	yu-text-shadow: 1px 1px 1px rgba(101, 148, 0, 1);
+}
+.green-line-title{
+	height: 24px;	
+	margin: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 14px;
+	line-height: 24px;
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;	
+	position: relative;
+	border-bottom: 3px solid #8dbe24;
+}
+.green-line-title i.triangle{
+	position: absolute;
+	left: 30px;
+	bottom: -12px;
+}
+.green-line-title a {
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+}
 
 
 
