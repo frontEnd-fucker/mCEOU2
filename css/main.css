@@ -39,6 +39,40 @@ body {
 	overflow: hidden;
 }
 
+
+/* =========================================================
+   push & pull
+   ========================================================= */
+
+#menu {
+	visibility: hidden;	
+}   
+#menu.push {
+	visibility: visible;
+}
+#container {
+	-webkit-transition: all 0.3s cubic-bezier(0.165,0.84,0.44,1);
+}
+#container.push {
+	-webkit-transform: translateX(250px);	
+}
+#container {
+	box-shadow: -3px -3px 6px rgba(0,0,0,0.8);	
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   end push & pull
+   ========================================================= */   
+
+
 /*==============================================
   header & nav
 ================================================*/
@@ -47,6 +81,8 @@ header {
 	height: 68px;
 	position: relative;
 	overflow: hidden;
+	background: #fff;
+	z-index: 999; /* 让header不被container的shadow遮盖 */
 }
 header i {
 	position: absolute;
@@ -102,13 +138,84 @@ nav a.curr {
 ===================================================================*/
 #menu {
 	width: 250px;
-	height: 1000px;
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 1000;
 	background: #303435;
-	overflow: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;	
+}
+#menu .menu-con {
+	height: 770px;
+}
+#menu .search-wrap {
+	width: 100%;
+	height: 60px;
+}
+#menu .search-input {
+	width: 180px;
+	height: 20px;
+	padding: 10px;
+	padding-left: 40px;
+	margin: 10px;
+	background: #fff url(../img/search-icon.png) no-repeat 10px 6px;
+	border: 0 none;
+	border-radius: 20px;
+}
+#menu .search-input:focus {
+	outline: 0 none;
+}
+#menu li {
+	border-bottom: 1px solid #646565;
+}
+#menu li:first-child {
+	border-top: 1px solid #646565;
+}
+#menu li a {
+	display: block;
+	height: 100%;
+}
+#menu li.title-item {
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+#menu li.user-item {
+	height: 70px;
+	font-size: 18px;
+}
+#menu li.user-item a {
+	height: 55px;
+	padding-left: 15px;
+	padding-top: 15px;		
+}
+#menu li.green-item a{
+	color: #a2ee00;
+	background: url(../img/green-arrow.png) no-repeat 225px center;
+}
+#menu li.yellow-item a{
+	color: #ffde00;
+	background: url(../img/yellow-arrow.png) no-repeat 225px center;
+}
+#menu li.blue-item a{
+	color: #00ccff;
+	background: url(../img/blue-arrow.png) no-repeat 225px center;
+}
+#menu li.user-item a span {
+	font-size: 14px;
+}
+#menu li.course-item {
+	height: 50px;
+	line-height: 50px;	
+	background: url(../img/gray-arrow.png) no-repeat 225px center;
+}
+#menu li.course-item a {
+	padding-left: 20px;
+	color: #cecece;
+	font-size: 18px;
+	border-left: 6px solid #1d1d1d;
 }
 /*============================================================
   end #menu
@@ -119,7 +226,9 @@ nav a.curr {
 /*================================================
   主页
 ===================================================*/
-
+#container {
+	background: #f7f7f7;
+}
 /* content-left */
 #content-left {
 	yu-display: none;
