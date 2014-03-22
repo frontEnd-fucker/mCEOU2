@@ -37,18 +37,38 @@
 	var dd = 0;
 	$('.menu-open').bind('click', function() {
 		if(dd == 0) {
-			$('#menu, #container, #push-mask').addClass('push');
+			$('#menu, #container').addClass('push');
 			dd = 1;
 			$('#container').bind('touchmove', function() {
 				$('.menu-open').trigger('click');
 			});
 		}else {
-			$(' #container, #menu, #push-mask').removeClass('push');
+			$('#container, #menu').removeClass('push');
 			dd = 0;
 			$('#container').unbind('touchmove');
 		}
 	});		
 	
-
+	/*
+	 * 点击user-open时的效果
+	*/
+	$('.user-open').bind('click', function() {
+		if(dd == 0) {
+			$('#user, #container').addClass('pull');
+			dd = 1;
+			$(window).bind('touchmove', function(e) {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+			});
+			$('#container').bind('touchmove', function() {
+				$('.user-open').trigger('click');
+			});
+		}else {
+			$('#container, #user').removeClass('pull');
+			dd = 0;
+			$(window).unbind('touchmove');
+			$('#container').unbind('touchmove');
+		}
+	});
 
 })(Zepto)
