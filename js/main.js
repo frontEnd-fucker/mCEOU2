@@ -37,28 +37,17 @@
 	var dd = 0;
 	$('.menu-open').bind('click', function() {
 		if(dd == 0) {
-			$('#menu, header, #container').addClass('push');
+			$('#menu, #container, #push-mask').addClass('push');
 			dd = 1;
-			$('#container').bind('touchmove', function(e) {
-				e.preventDefault();
-				e.stopImmediatePropagation();
+			$('#container').bind('touchmove', function() {
+				$('.menu-open').trigger('click');
 			});
 		}else {
-			$('#menu, header, #container').removeClass('push');
+			$(' #container, #menu, #push-mask').removeClass('push');
 			dd = 0;
 			$('#container').unbind('touchmove');
 		}
-	});
-
-
-    /*
- 	 * 当container上发生touchmove事件时触发点击menu-open
-	 */
-	$('#container').bind('touchmove', function() {
-		if($(this).hasClass('push')) {
-			$('.menu-open').trigger('click');
-		}		
-	});			
+	});		
 	
 
 
