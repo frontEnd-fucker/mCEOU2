@@ -11,18 +11,86 @@
 
 <body>
 
-<!-- header -->
-<header>
-	<div class="wrap">
-		<i class="menu-open"></i>
-		<a class="logo" href="#"><img src="img/logo.png"></a>		
-		<i class="user-open"></i>
+<!-- menu -->
+<div id="menu">
+	<div class="menu-con">
+		<div class="search-wrap">
+			<form>
+				<input type="text" name="search" class="search-input" placeholder="关键字搜索">
+			</form>
+		</div>
+		<ul>
+			<li class="title-item">会员分类</li>
+			<li class="user-item green-item"><a href="#">游客体验专区<br><span>体验百个免费视频</span></a></li>
+			<li class="user-item yellow-item"><a href="#">免费注册会员专区<br><span>体验百个免费视频</span></a></li>
+			<li class="user-item blue-item"><a href="#">付费会员专区<br><span>体验百个免费视频</span></a></li>
+			<li class="title-item">课程分类</li>
+			<li class="course-item"><a href="#">首页</a></li>
+			<li class="course-item"><a href="videoList.html">精品推荐</a></li>
+			<li class="course-item"><a href="#">创业</a></li>
+			<li class="course-item"><a href="#">管理</a></li>
+			<li class="course-item"><a href="#">营销</a></li>
+			<li class="course-item"><a href="#">职场</a></li>
+			<li class="course-item"><a href="#">生活</a></li>
+		</ul>
+	</div>	
+</div>
+<!-- end menu -->
+
+<!-- user -->
+<div id="user">
+	<!-- user without login -->
+	<div class="user-con">
+		<div class="user-top">
+			<p class="fl">还没有帐号？<a href="#">立即注册</a></p>
+			<p class="fr"><a href="#">忘记密码</a></p>
+		</div>
+		<div class="login-form">
+			<form>
+				<p class="input-con">
+					<input class="txt-input" name="user" type="text" placeholder="邮箱/帐号">
+				</p>
+				<p class="input-con">
+					<input class="txt-input" name="pwd" type="password" placeholder="密码">
+				</p>
+				<p class="input-con">
+					<input class="login-btn" value="登录" type="submit"> 
+				</p>
+			</form>
+		</div>
+	</div>	
+	<!-- end user without login -->
+
+	<!-- user already logined -->
+	<div id="user-loged">
+		<div class="user-loged-top">
+			个人中心
+			<a class="fr pill" href="javascript:;">退出</a>
+		</div>
+		<div class="user-loged-bottom">
+			<ul>
+				<li class="user-item green-item"><a href="favorite.html">我的收藏</a></li>
+				<li class="user-item yellow-item"><a href="#">我的课程</a></li>
+				<li class="user-item blue-item"><a href="#">历史记录</a></li>
+			</ul>
+		</div>
 	</div>
-</header>
-<!-- end header -->
+	<!-- end user already logined -->	
+</div>
+<!-- end user -->
 
 <!-- container -->
 <div id="container">
+
+	<!-- header -->
+	<header>
+		<div class="wrap">
+			<i class="menu-open"></i>
+			<a class="logo" href="#"><img src="img/logo.png"></a>		
+			<i class="user-open"></i>
+		</div>
+	</header>
+	<!-- end header -->
 
     <!-- cc-player -->
     <div id="ccPlayer">
@@ -93,13 +161,16 @@
 		</div>	
 	</div>	
 	<!-- end recommend -->
+
+	<footer>
+		<p>乐享移动教育</p>
+		<p>CopyRight&copy2013-2014 中国移动企业在线大学 粤ICP备1401604</p>
+	</footer>	
 </div>
 <!-- end container -->
 
-<footer>
-	<p>乐享移动教育</p>
-	<p>CopyRight&copy2013-2014 中国移动企业在线大学 粤ICP备1401604</p>
-</footer>
-
+<script src="js/vendor/zepto.min.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
