@@ -251,11 +251,10 @@ nav a.curr {
 .txt-input {
 	height: 40px;
 	width: 100%;
-	yu-line-height: 40px;
-	yu-line-height: normal
+	padding-left: 10px;
 	color: #c2c2c2;
-	text-indent: 10px;
 	border: 2px solid #000;
+	box-sizing: border-box;
 }
 .txt-input:focus {
 	outline: 0 none;
@@ -545,11 +544,20 @@ video {
 	width: 33.333333333333333%;
 }
 
-
-
 /* ====================================================
    end 我的收藏页面favorite.html
    ==================================================== */
+
+
+/* ====================================================
+   注册页面reg.html
+   ==================================================== */
+#reg-form {
+	padding: 20px;
+}
+/* ====================================================
+   end 注册页面reg.html
+   ==================================================== */      
 footer {
 	clear: both;
 	height: 70px;
