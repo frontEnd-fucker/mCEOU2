@@ -40,25 +40,46 @@
 
 <!-- user -->
 <div id="user">
-	<div class="user-top">
-		<p class="fl">还没有帐号？<a href="#">立即注册</a></p>
-		<p class="fr"><a href="#">忘记密码</a></p>
+	<!-- user without login -->
+	<div class="user-con">
+		<div class="user-top">
+			<p class="fl">还没有帐号？<a href="#">立即注册</a></p>
+			<p class="fr"><a href="#">忘记密码</a></p>
+		</div>
+		<div class="login-form">
+			<form>
+				<p class="input-con">
+					<input class="txt-input" name="user" type="text" placeholder="邮箱/帐号">
+				</p>
+				<p class="input-con">
+					<input class="txt-input" name="pwd" type="password" placeholder="密码">
+				</p>
+				<p class="input-con">
+					<input class="login-btn" value="登录" type="submit"> 
+				</p>
+			</form>
+		</div>
+	</div>	
+	<!-- end user without login -->
+
+	<!-- user already logined -->
+	<div id="user-loged">
+		<div class="user-loged-top">
+			个人中心
+			<a class="fr pill" href="javascript:;">退出</a>
+		</div>
+		<div class="user-loged-bottom">
+			<ul>
+				<li class="user-item green-item"><a href="#">我的收藏</a></li>
+				<li class="user-item yellow-item"><a href="#">我的课程</a></li>
+				<li class="user-item blue-item"><a href="#">历史记录</a></li>
+			</ul>
+		</div>
 	</div>
-	<div class="login-form">
-		<form>
-			<p class="input-con">
-				<input class="txt-input" name="user" type="text" placeholder="邮箱/帐号">
-			</p>
-			<p class="input-con">
-				<input class="txt-input" name="pwd" type="password" placeholder="密码">
-			</p>
-			<p class="input-con">
-				<input class="login-btn" value="登录" type="submit"> 
-			</p>
-		</form>
-	</div>
+	<!-- end user already logined -->	
 </div>
 <!-- end user -->
+
 
 <!-- container -->
 <div id="container">

@@ -184,6 +184,9 @@ nav a.curr {
 	display: block;
 	height: 100%;
 }
+#menu li.user-item a {
+	height: 55px;
+}
 #menu li.title-item {
 	height: 60px;
 	line-height: 60px;
@@ -191,27 +194,7 @@ nav a.curr {
 	font-size: 20px;
 	text-align: center;
 }
-#menu li.user-item {
-	height: 70px;
-	font-size: 18px;
-}
-#menu li.user-item a {
-	height: 55px;
-	padding-left: 15px;
-	padding-top: 15px;		
-}
-#menu li.green-item a{
-	color: #a2ee00;
-	background: url(../img/green-arrow.png) no-repeat 225px center;
-}
-#menu li.yellow-item a{
-	color: #ffde00;
-	background: url(../img/yellow-arrow.png) no-repeat 225px center;
-}
-#menu li.blue-item a{
-	color: #00ccff;
-	background: url(../img/blue-arrow.png) no-repeat 225px center;
-}
+
 #menu li.user-item a span {
 	font-size: 14px;
 }
@@ -240,6 +223,9 @@ nav a.curr {
 	right: 0;
 	top: 0;
 	background: #303435;
+}
+.user-con {
+	yu-display: none;
 }
 .user-top {
 	height: 60px;
@@ -288,6 +274,39 @@ nav a.curr {
 	box-sizing: content-box;
 }
 
+#user-loged .user-loged-top {
+	height: 68px;
+	padding: 0 10px;
+	line-height: 68px;
+	color: #fffffe;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #000000;
+	background: #1d1d1d;
+}
+#user-loged .user-loged-top .pill {
+	margin-top: 20px;
+	padding: 4px 15px;
+	line-height: 1;
+	font-size: 16px;
+}	
+#user-loged li {
+	padding-left: 33px;
+	border-bottom: 1px solid #646565;
+}
+#user-loged li a {
+	padding: 0;
+	line-height: 70px;
+	background-position: 193px center;
+}
+#user-loged .green-item {
+	background: url(../img/green-star.png) no-repeat 10px 24px;
+}
+#user-loged .yellow-item {
+	background: url(../img/yellow-user.png) no-repeat 10px 24px;
+}
+#user-loged .blue-item {
+	background: url(../img/blue-clock.png) no-repeat 10px 24px;
+}
 /* ================================================
    end user
    ================================================ */   
@@ -618,6 +637,29 @@ footer p {
 	font-size: 18px;
 	font-weight: normal;
 	text-decoration: none;
+}
+
+li.user-item {
+	height: 70px;
+	font-size: 18px;
+}
+li.user-item a {
+	display: block;
+	height: 100%;
+	padding-left: 15px;
+	padding-top: 15px;		
+}
+li.green-item a{
+	color: #a2ee00;
+	background: url(../img/green-arrow.png) no-repeat 225px center;
+}
+li.yellow-item a{
+	color: #ffde00;
+	background: url(../img/yellow-arrow.png) no-repeat 225px center;
+}
+li.blue-item a{
+	color: #00ccff;
+	background: url(../img/blue-arrow.png) no-repeat 225px center;
 }
 
 
