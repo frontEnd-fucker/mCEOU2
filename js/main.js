@@ -14,21 +14,6 @@
 		$('#menu').height(config.h);
 	}
 
-	/*
-	 * 主页点击导航显示相应的content-left或content-right
-	*/
-	new MBP.fastButton($('.nav-left')[0], function() {
-		$('nav a').removeClass('curr');
-		$(this).addClass('curr');
-		$('#content-right').hide();
-		$('#content-left').show();		
-	});
-	new MBP.fastButton($('.nav-right')[0], function() {
-		$('nav a').removeClass('curr');
-		$(this).addClass('curr');
-		$('#content-left').hide();
-		$('#content-right').show();		
-	});
 
 	/*
 	 * 点击menu-open时的效果	

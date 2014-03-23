@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
 <meta charset="utf-8">
 <title>中国企业在线大学</title>
@@ -448,11 +447,28 @@
 </div>
 <!-- end container -->
 
-<div class="clear-both"></div>
-
 <script src="js/vendor/zepto.min.js"></script>
 <script src="js/vendor/touch.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/main.js"></script>
+<script>
+$(function() {
+	/*
+	 * 主页点击导航显示相应的content-left或content-right
+	*/
+	new MBP.fastButton($('.nav-left')[0], function() {
+		$('nav a').removeClass('curr');
+		$(this).addClass('curr');
+		$('#content-right').hide();
+		$('#content-left').show();		
+	});
+	new MBP.fastButton($('.nav-right')[0], function() {
+		$('nav a').removeClass('curr');
+		$(this).addClass('curr');
+		$('#content-left').hide();
+		$('#content-right').show();		
+	});	
+});	
+</script>
 </body>
 </html>

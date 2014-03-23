@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>我的收藏</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">	
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="favorite">
+
+<!-- menu -->
+<div id="menu">
+	<div class="menu-con">
+		<div class="search-wrap">
+			<form>
+				<input type="text" name="search" class="search-input" placeholder="关键字搜索">
+			</form>
+		</div>
+		<ul>
+			<li class="title-item">会员分类</li>
+			<li class="user-item green-item"><a href="#">游客体验专区<br><span>体验百个免费视频</span></a></li>
+			<li class="user-item yellow-item"><a href="#">免费注册会员专区<br><span>体验百个免费视频</span></a></li>
+			<li class="user-item blue-item"><a href="#">付费会员专区<br><span>体验百个免费视频</span></a></li>
+			<li class="title-item">课程分类</li>
+			<li class="course-item"><a href="#">首页</a></li>
+			<li class="course-item"><a href="#">精品推荐</a></li>
+			<li class="course-item"><a href="#">创业</a></li>
+			<li class="course-item"><a href="#">管理</a></li>
+			<li class="course-item"><a href="#">营销</a></li>
+			<li class="course-item"><a href="#">职场</a></li>
+			<li class="course-item"><a href="#">生活</a></li>
+		</ul>
+	</div>	
+</div>
+<!-- end menu -->
+
+<!-- user -->
+<div id="user">
+	<!-- user without login -->
+	<div class="user-con">
+		<div class="user-top">
+			<p class="fl">还没有帐号？<a href="#">立即注册</a></p>
+			<p class="fr"><a href="#">忘记密码</a></p>
+		</div>
+		<div class="login-form">
+			<form>
+				<p class="input-con">
+					<input class="txt-input" name="user" type="text" placeholder="邮箱/帐号">
+				</p>
+				<p class="input-con">
+					<input class="txt-input" name="pwd" type="password" placeholder="密码">
+				</p>
+				<p class="input-con">
+					<input class="login-btn" value="登录" type="submit"> 
+				</p>
+			</form>
+		</div>
+	</div>	
+	<!-- end user without login -->
+
+	<!-- user already logined -->
+	<div id="user-loged">
+		<div class="user-loged-top">
+			个人中心
+			<a class="fr pill" href="javascript:;">退出</a>
+		</div>
+		<div class="user-loged-bottom">
+			<ul>
+				<li class="user-item green-item"><a href="#">我的收藏</a></li>
+				<li class="user-item yellow-item"><a href="#">我的课程</a></li>
+				<li class="user-item blue-item"><a href="#">历史记录</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end user already logined -->	
+</div>
+<!-- end user -->
+
+<!-- container -->
+<div id="container">
+
+	<!-- header -->
+	<header>
+		<div class="wrap">
+			<i class="menu-open"></i>
+			<a class="logo" href="#"><img src="img/logo.png"></a>		
+			<i class="user-open"></i>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- nav -->
+	<nav class="cf">
+		<a class="curr" href="#">我的收藏</a>
+		<a href="myCourse.html">我的课程</a>
+		<a href="timeline.html">历史记录</a>
+	</nav>
+	<!-- end nav -->	
+
+	<!-- content -->
+	<div class="content wrap">
+		<div class="mod-vertical-video">
+			<ul class="vertical-video-list">
+				<li class="vVideo-item">
+					<div class="vVideo-thumb">
+						<a href="#"><img src="img/pic/v-thumb.jpg"></a>
+					</div>
+					<div class="vVideo-data">
+						<a class="vVideo-name">总裁战略管控</a>
+						<p class="vVideo-author">讲师：李信念</p>
+						<p class="vVideo-intro">some课程劫杀bl</p>
+					</div>
+				</li>
+				<li class="vVideo-item">
+					<div class="vVideo-thumb">
+						<a href="#"><img src="img/pic/v-thumb.jpg"></a>
+					</div>
+					<div class="vVideo-data">
+						<a class="vVideo-name">总裁战略管控</a>
+						<p class="vVideo-author">讲师：李信念</p>
+						<p class="vVideo-intro">some课程劫杀blabal巴</p>
+					</div>
+				</li>
+				<li class="vVideo-item">
+					<div class="vVideo-thumb">
+						<a href="#"><img src="img/pic/v-thumb.jpg"></a>
+					</div>
+					<div class="vVideo-data">
+						<a class="vVideo-name">总裁战略管控</a>
+						<p class="vVideo-author">讲师：李信念</p>
+						<p class="vVideo-intro">some课程劫杀blabal巴拉巴拉</p>
+					</div>
+				</li>	
+				<li class="vVideo-item">
+					<div class="vVideo-thumb">
+						<a href="#"><img src="img/pic/v-thumb.jpg"></a>
+					</div>
+					<div class="vVideo-data">
+						<a class="vVideo-name">总裁战略管控</a>
+						<p class="vVideo-author">讲师：李信念</p>
+						<p class="vVideo-intro">some课程劫杀blabal巴拉巴拉</p>
+					</div>
+				</li>								
+			</ul>
+		</div>
+	</div>
+	<!-- end content -->
+
+	<!-- footer -->
+	<footer>
+		<p>乐享移动教育</p>
+		<p>CopyRight&copy2013-2014 中国移动企业在线大学 粤ICP备1401604</p>
+	</footer>
+	<!-- end footer -->		
+</div>
+<!-- end container -->
+
+<script src="js/vendor/zepto.min.js"></script>
+<script src="js/vendor/touch.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
